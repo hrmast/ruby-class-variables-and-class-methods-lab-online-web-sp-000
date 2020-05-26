@@ -33,10 +33,10 @@ class Song
   end
 
   def self.genre_count
-    #binding.pry
+    binding.pry
     #count the number of times a song occurs within the genre
 
-    
+
   end
 
   def self.artist_count
