@@ -6,8 +6,6 @@ class Song
     @@count = 0
     @@artists = []
     @@genres = []
-    @@genre_count = {}
-    @@artist_count = {}
 
   def initialize(name, artist, genre)
     @name = name
@@ -35,6 +33,9 @@ class Song
   def self.genre_count
     #binding.pry
     #count the number of times a song occurs within the genre
+    genre_count = Hash.new(0)
+    @@genres.each do |genre| genre_count[genre] += 1
+      
 
 
   end
