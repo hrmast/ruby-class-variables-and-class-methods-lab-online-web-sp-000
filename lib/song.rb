@@ -29,8 +29,6 @@ class Song
   end
 
   def self.genre_count
-    #binding.pry
-    #count the number of times a song occurs within the genre
     genre_count = Hash.new(0)
     @@genres.each do |genre| genre_count[genre] += 1
     end
@@ -39,6 +37,9 @@ class Song
 
 
   def self.artist_count
-
+    artist_count = Hash.new(0)
+    @@artist.each do |artist| artist_count[artist]+= 1
+    end
+    artist_count
   end
 end
